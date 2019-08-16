@@ -1,0 +1,17 @@
+.cartItem{
+    border:black 1px solid ;
+    width:95%;
+    height:200px;
+    display: flex;
+
+}
+.cartItemImg{
+    img{
+        height: 200px;
+        width:120px;
+    }
+
+}
+.cartPandQ{
+    float: right;
+}

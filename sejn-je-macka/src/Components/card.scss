@@ -1,0 +1,129 @@
+.cardWrap{
+    box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+   &:hover{
+     transform: scale(1);
+     box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+   }
+
+   
+    background-color:white;
+    height: 350px;
+    width: 200px;
+  
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+   
+}
+.cardImg{
+    height:250px;
+    background-size: cover;
+    
+    background-image: url("https://damonza.com/wp-content/uploads/portfolio/nonfiction/Deep%20Tasting%2012.jpg") ;
+    border-radius: 6px 6px 0 0;
+}
+.cardBttm{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.cardTitle{
+    display: table;
+   
+   p{
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+       text-align: center; 
+       font-weight: bold;
+        margin:auto;
+       padding: 0;
+   }
+  
+   
+    border-radius: 0 0 3px 3px;
+    width: 200px;
+    height:63px;
+    background-image: linear-gradient(rgb(204, 204, 204) 5% ,white,white );
+   
+}
+.cardLeftButton{
+width: 100px;
+
+button{
+    font-weight: bold;
+    border-radius: 6px 0 0 6px;
+    background-color: rgb(63, 63, 248);
+    width: 100px;
+    height:37px;
+   &:hover{background-color: aqua;}
+}
+}
+.cardRightButton{
+    width:100px;
+    button{
+       
+        background-color: white;
+        border-radius:0 6px 6px 0;
+        width: 100px;
+        height:37px; 
+        &:hover{background-color: rgb(206, 206, 113);}
+    }
+   
+
+}
+  
+
+  @media screen and (max-width: 600px) {
+      .cardWrap{
+          height: 275px;
+          width: 143px;
+      }
+
+
+      .cardImg{
+        height:178px;
+        background-color: darkgray;
+    }
+    .cardTitle{
+    text-decoration: blue;
+    p{
+        font-family: 'Montserrat', sans-serif;
+        position: relative;  
+        text-align: left; 
+        font-weight: normal;
+        margin:0 0;
+        padding: 0;
+    }
+    width: 143px;
+    height:68px;
+    background-color: purple;
+   
+}
+.cardLeftButton{
+    width: 71px;
+    button{
+       
+        width: 71px;
+        height:29px;
+    }
+    }
+    .cardRightButton{
+        width:72px;
+        button{
+            color:red;
+           
+            width: 72px;
+            height:29px;
+        }
+    
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+   
+  }
