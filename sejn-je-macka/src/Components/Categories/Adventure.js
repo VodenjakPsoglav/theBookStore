@@ -1,66 +1,48 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { addToCart } from '../../Store/actions/cartActions'
-import Card from '../card'
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { addToCart } from "../../Store/actions/cartActions";
+import Card from "../card";
 
+class Adventure extends Component {
+  handleClick = id => {
+    this.props.addToCart(id);
+  };
 
+  render() {
+    let itemList = this.props.items.map(item => {
+      return item.category === "adventure" ? (
+        <Card
+          key={item.id}
+          title={item.title}
+          text={item.desc}
+          price={item.price}
+          oldprice={item.oldPrice}
+          cartClick={() => {
+            this.handleClick(item.id);
+          }}
+          imgURL={item.imgURL}
+          category={item.category}
+        />
+      ) : null;
+    });
 
-
- class Adventure extends Component{
-     
-    
-    handleClick = (id)=>{
-        this.props.addToCart(id); 
-    }
-
-    
-    
- 
- 
-    render(){
-        
-        let itemList = this.props.items.map(item=>{
-            
-            return( (item.category==='adventure')?
-                <Card key={item.id} 
-                title={item.title} 
-                text={item.desc} 
-                price={item.price} 
-                oldprice={item.oldPrice} 
-                cartClick={()=>{this.handleClick(item.id)}}
-                imgURL={item.imgURL}
-                category={item.category} /> :null
-               
-
-            )
-        })
-       
-           
-        
-        
-
-        return(
-            
-                <div className='cardsLayout'>
-                    
-                   
-                  
-                  {itemList}
-                </div>
-            
-        )
-    }
-}
-const mapStateToProps = (state)=>{
-    return {
-      items: state.items
-    }
+    return <div className="cardsLayout">{itemList}</div>;
   }
-const mapDispatchToProps= (dispatch)=>{
-    
-    return{
-        addToCart: (id)=>{dispatch(addToCart(id))}
-    }
 }
+const mapStateToProps = state => {
+  return {
+    items: state.items
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    addToCart: id => {
+      dispatch(addToCart(id));
+    }
+  };
+};
 
-export default connect(mapStateToProps,mapDispatchToProps)(Adventure)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Adventure);

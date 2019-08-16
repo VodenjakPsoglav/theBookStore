@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import './Recipe.scss'
 
 class Recipe extends Component{
     
@@ -22,13 +23,13 @@ class Recipe extends Component{
                    
                             <label>
                                 <input type="checkbox"  onChange= {this.handleChecked} />
-                                <span>Shipping(+6$)</span>
+                                <span>Shipping( +6$ )</span>
                             </label>
                       
                       <b>Total: {this.props.total} $</b>
                     </div>
                     <div >
-                        <button >Checkout</button>
+                        <button className='recipeButton' >Checkout</button>
                     </div>
                  </div>
         )

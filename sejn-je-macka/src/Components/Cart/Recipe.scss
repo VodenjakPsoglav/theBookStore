@@ -1,0 +1,12 @@
+.recipeButton {
+  height: 50px;
+  width: 100px;
+  margin: 10px;
+  background-image: radial-gradient(lightgreen, green);
+  border-radius: 3px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 18px;
+  &:hover {
+    background-image: linear-gradient(green, lightgreen, green);
+  }
+}

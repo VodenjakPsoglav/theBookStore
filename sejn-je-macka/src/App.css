@@ -1,15 +1,12 @@
-body,html{
-  width:100%;
-  margin:0 auto;
-  padding:0;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+body,
+html {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.App{
-
-  margin:0 auto;
-  padding:0;
+.App {
+  margin: 0 auto;
+  padding: 0;
   width: 100%;
 }
-
-
-

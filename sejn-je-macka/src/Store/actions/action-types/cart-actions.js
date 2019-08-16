@@ -1,10 +1,10 @@
 //Types should be in const to avoid typos and duplication since it's a string and could be easily miss spelled
-export const ADD_TO_CART = 'ADD_TO_CART';
-export const REMOVE_ITEM = 'REMOVE_ITEM';
-export const SUB_QUANTITY = 'SUB_QUANTITY';
-export const ADD_QUANTITY = 'ADD_QUANTITY';
-export const ADD_SHIPPING = 'ADD_SHIPPING';
-export const SUB_SHIPPING = 'SUB_SHIPPING';
-export const SET_BOOKS= 'SET_BOOKS';
-export const INIT_BOOKS='INIT_BOOKS';
-export const FETCH_BOOKS_ERR='FETCH_BOOKS_ERR';
+export const ADD_TO_CART = "ADD_TO_CART";
+export const REMOVE_ITEM = "REMOVE_ITEM";
+export const SUB_QUANTITY = "SUB_QUANTITY";
+export const ADD_QUANTITY = "ADD_QUANTITY";
+export const ADD_SHIPPING = "ADD_SHIPPING";
+export const SUB_SHIPPING = "SUB_SHIPPING";
+export const SET_BOOKS = "SET_BOOKS";
+export const INIT_BOOKS = "INIT_BOOKS";
+export const FETCH_BOOKS_ERR = "FETCH_BOOKS_ERR";
